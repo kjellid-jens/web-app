@@ -5,3 +5,18 @@ html {
 body {
     margin: 0;
 }
+
+.headerContainer{
+    height: 200px;
+    background-color: rgb(55, 55, 55);
+}
+
+.mainContentContainer{
+    height: 200px;
+    background-color: rgb(75, 75, 75);
+}
+
+.footerContainer{
+    height: 200px;
+    background-color: rgb(95, 95, 95);
+}
