@@ -15,7 +15,7 @@ var log = util.log
 // Concatenate and minify JS Files
 gulp.task('scripts', function() {
     log("Concatenate and minify JS files " + (new Date()).toString());
-    return gulp.src('assets/js/*.js')
+    return gulp.src('assets/src/js/*.js')
     .pipe(concat('all.js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
@@ -25,10 +25,9 @@ gulp.task('scripts', function() {
 // Process SCSS to CSS
 gulp.task("sass", function(){
     log("Generate CSS files " + (new Date()).toString());
-    gulp.src('assets/scss/*.scss')
+    gulp.src('assets/src/scss/*.scss')
     .pipe(sass({ style: 'expanded' }))
     .pipe(autoprefixer("last 3 version","safari 5", "ie 8", "ie 9"))
-    .pipe(gulp.dest("assets/dist/css"))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
     .pipe(gulp.dest('assets/dist/css'));
@@ -37,9 +36,9 @@ gulp.task("sass", function(){
 // Automatically run tasks upon change
 gulp.task('watch', function() {
    // Watch .js files
-  gulp.watch('assets/js/*.js', ['scripts']);
+  gulp.watch('assets/src/js/*.js', ['scripts']);
    // Watch .scss files
-  gulp.watch('assets/scss/*.scss', ['sass']);
+  gulp.watch('assets/src/scss/*.scss', ['sass']);
  });
 
 // Default Task
