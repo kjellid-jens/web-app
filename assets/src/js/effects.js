@@ -1,5 +1,5 @@
 $(function() {
 
-    console.log("effects.js loaded")
+    console.log("effects.js loaded");
 
-})
+});
