@@ -1,0 +1,57 @@
+//cv.scss
+.headerNavLinkCv{
+    text-decoration: underline;
+}
+
+.mainSectionItem{
+    margin: 35px 0 25px 0;
+
+    h3{
+    margin: 10px 0 10px 0;
+    font-size: 1.75em;
+    text-decoration: underline;
+    }
+}
+
+.mainSectionItemLeft{
+    float:left;
+    margin-right: 2.5%;
+}
+
+.mainSectionItemLeft p, .mainSectionItemRight p {
+    font-size: 1.5em;
+}
+
+.mainSectionItemRight{
+    display:inline-block;
+    width: 80%;
+}
+
+.mainSectionItemBottom {
+
+    ul li {
+
+        font-size: 1.25em;
+    }
+    h4{
+        margin: 25px 0 0 0;
+        font-size: 1.5em;
+    }
+
+    p {
+        margin: 5px 0 5px 0;
+    }
+}
+
+.mainSectionItem:first-child .mainSectionItemLeft p:first-child {
+    margin-bottom: 26%;
+}
+
+.mainSectionItemLeft:nth-child(2) p:first-child{
+    margin-bottom: 45%;
+}
+
+.mainSectionItemRight p:nth-child(2), .mainSectionItemRight p:nth-child(4)  {
+    font-size: 1.25em;
+}
+
