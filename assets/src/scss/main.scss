@@ -1,3 +1,6 @@
+//main.scss
+$blue: rgb(50, 75, 125);
+
 *{
     margin:0;
 }
@@ -8,11 +11,11 @@ html {
 }
 
 body {
-    border: 1px solid rgb(50, 75, 125);
+    border: 1px solid $blue;
 }
 
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, a{
     font-family:sans-serif;
 }
 
@@ -20,9 +23,6 @@ h1, h2 {
     color: white;
 }
 
-p {
-    margin: 5px 0 5px 0;
-}
 
 ul {
     list-style: none;
@@ -30,72 +30,56 @@ ul {
 }
 
 .headerSection{
-    height: 150px;
+    height: 100px;
+    background-color: $blue;
     text-align:center;
-    background-color: rgb(50, 75, 125);
+
+    h1{
+        padding-top:10px;
+        font-size: 2em;
+    }
 }
 
-.headerText{
-    padding-top: 40px;
+.headerNav{
+    margin-top: 15px;
 }
 
-.headerText h1 {
-    font-size: 2em;
-}
 
-.headerText h2 {
+.headerNavLink{
+    color: white;
+    text-decoration: none;
+    margin: 25px 10px 25px 10px;
     font-size: 1.25em;
 }
-.mainSection{
-    width: 90%;
+
+.headerNavLink:hover{
+    color: black;
 }
 
 .mainSection{
+    width: 90%;
     margin: 0 auto;
 }
 
-.mainSectionItem{
-    margin: 35px 0 25px 0;
+footer {
+    height: 100px;
+    background-color: $blue;
+    text-align:center;
+    padding-top: 10px;
+
+    p{
+        margin-bottom: 35px;
+    }
+    a, p{
+        font-size: 1.5em;
+        color:white;
+        text-decoration:none;
+        margin-right: 10px;
+
+    }
+
+    a:hover{
+        color:black;
+    }
 }
 
-.mainSectionItem h3 {
-    margin: 10px 0 10px 0;
-    font-size: 1.75em;
-    text-decoration: underline;
-}
-
-.mainSectionItemLeft{
-    float:left;
-    margin-right: 2.5%;
-}
-
-.mainSectionItemLeft p, .mainSectionItemRight p {
-    font-size: 1.5em;
-}
-
-.mainSectionItemBottom ul li{
-    font-size: 1.25em;
-}
-
-.mainSectionItemBottom h4 {
-    margin: 15px 0 15px 0;
-    font-size: 1.5em;
-
-}
-
-.mainSectionItem:first-child .mainSectionItemLeft p:first-child {
-    margin-bottom: 26%;
-}
-
-.mainSectionItemLeft:nth-child(2) p:first-child{
-    margin-bottom: 45%;
-}
-
-.mainSectionItemRight p:nth-child(2), .mainSectionItemRight p:nth-child(4)  {
-    font-size: 1.25em;
-}
-
-.mainSectionItemRight{
-    display:inline-block;
-    width: 80%;
-}
